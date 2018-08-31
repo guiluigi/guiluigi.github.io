@@ -1,3 +1,15 @@
 #titulo img{
     z-index: -1;
 }
+#conteudo{
+    padding: 0;
+}
+#conteudo .column{
+    height: 50vh;
+    background: url(../img/projetos.png) center center round;
+    text-align: center;
+    padding-top:25vh !important; 
+    color: white;
+    font-size: 6vh;
+    font-weight: 900;
+}
