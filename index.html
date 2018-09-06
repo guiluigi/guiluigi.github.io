@@ -26,35 +26,60 @@
       <div class="level-item has-text-centered">
         <div>
           <p class="heading">Linhas de código</p>
-          <p class="title animated tada delay-5s has-text-weight-bold">+30k<i class="mdi mdi-github-circle" href="/"></i></p>
+          <p class="title has-text-weight-bold">+30k<i class="mdi mdi-github-circle" href="/"></i></p>
         </div>
       </div>
       <div class="level-item has-text-centered">
         <div>
           <p class="heading">Horas de video-aula</p>
-          <p class="title animated tada delay-6s has-text-weight-bold">~156h</p>
+          <p class="title has-text-weight-bold">~156h</p>
         </div>
       </div>
       <div class="level-item has-text-centered">
         <div>
           <p class="heading">Arquivos na nuvem</p>
-          <p class="title animated tada delay-7s has-text-weight-bold">+8000</p>
+          <p class="title has-text-weight-bold">+8000</p>
         </div>
       </div>
     </nav>
   </section>
   <section class="section" id="conteudo">
     <div class="columns is-gapless">
-      <div class="column">
+      <a class="column" id="projetosLink">
         Projetos
-      </div>
-      <div class="column">
+      </a>
+      <a class="column" id="blogLink">
         Blog Pessoal
-      </div>
-      <div class="column">
+      </a>
+      <a class="column" id="infoLink">
         + infos
-      </div>
+      </a>
     </div>
   </section>
+  <div class="modal is-invisible"  id="blog">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        TESTE
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $("#projetosLink").click( function(){
+      $("#link").toggleClass("is-invisible");
+    });
+    $("#blogLink").click( function(){
+      $("#blog").toggleClass("is-invisible");
+    });
+    $("#infoLink").click( function(){
+      $("#info").toggleClass("is-invisible");
+    });
+    $(".modal-close").click( function(){
+      $(".modal").addClass("is-invisible");
+    });
+  </script>
   </body>
 </html>

@@ -13,3 +13,14 @@
     font-size: 6vh;
     font-weight: 900;
 }
+
+.modal{
+    display: flex;
+}
+.modal-content{
+    width: 100%;
+    padding: 1rem;
+}
+.delete::before, .modal-close::before, .delete::after, .modal-close::after{
+    background-color: hsl(171, 100%, 41%);
+}
