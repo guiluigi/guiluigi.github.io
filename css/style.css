@@ -12,6 +12,13 @@
     color: white;
     font-size: 6vh;
     font-weight: 900;
+    position: relative;
+}
+
+#conteudo .column .tags{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
 }
 
 .modal{
@@ -23,4 +30,8 @@
 }
 .delete::before, .modal-close::before, .delete::after, .modal-close::after{
     background-color: hsl(171, 100%, 41%);
+}
+
+.footer{
+    padding: 2rem 0;
 }
