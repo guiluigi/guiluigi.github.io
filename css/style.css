@@ -47,6 +47,11 @@
 
 #posts img{
     filter: brightness(30%);
+    max-height: 30rem
+}
+
+#posts .image{
+    
 }
 
 #posts .title{
@@ -54,4 +59,10 @@
     z-index: 10;
     padding: 0.5rem;
     color: white;
+    max-height: 30rem;
+}
+
+.tile.is-ancestor{
+    margin-left: 0;
+    margin-right: 0;
 }
